@@ -1,0 +1,12 @@
+For this excercise, I recored 2 GPS instructions using my phone. Next, I chose a pieces of piano music from 
+https://freesound.org. Then, I normalized the audio files for a consistent volume profile.
+
+Ducking seemed to work best with a duck gain that gradually tapers off in .5 seconds. I reduced the duck gain from 1.0 to .3 in this timeframe.
+I reduced the duck gain from 1.0 to .3 in this timeframe.Then, when the GPS voice played, the background music frequencies will be cutoff by 500 Hz
+
+Topological view of the UGens:
+
+BACKGROUND MUSIC --> BIQUAD FILTER --> MUSIC GAIN --> GAIN -> AC OUT
+	   	       		     	 	      ^
+				     		      |
+				     		   GPS VOICES

@@ -1,0 +1,19 @@
+Quyen Pham
+CS 4590A - Computer Audio
+
+Class Exercise 4:
+
+The code is the simulation of an audio tape reel-to-reel visualization, which uses the Beads library and ControlP5 library to create a UI and handle audio processing. 
+The code uses a combination of Glide objects, SamplePlayer objects, and Bead objects to handle audio playback, rate control, and end-of-sample handling. The UI consists of five buttons: 
+Play, Rewind, Stop, Fast Forward, and Reset. When a button is clicked, it's corresponding sound effect is fired. The functionality of those buttons is as below:
+
+    Play - Resumes normal speed playback from current position of sound file.
+    Stop - Stops playback of the sound file, maintaining the current playback position. Playback can resume from the same point after hitting the play button
+    Reset - Stops playback and resets playhead to beginning of music.
+    Rewind - Sets playback to -4.0 rate and begins playback.
+    Fast Forward - starts playback from the current position of the sound file at an increased speed of 4.0 rate
+
+Also, The Play, Fast Forward, and Rewind buttons modify the playback rate of the music sample using a Glide object, while the Stop and Reset buttons start 
+the corresponding audio samples. The code also includes a listener to handle the end of the sample and reset the playback rate to 0.
+
+ 
